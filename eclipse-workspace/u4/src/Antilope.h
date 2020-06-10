@@ -1,0 +1,22 @@
+/*
+ * Antilope.h
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#ifndef ANTILOPE_H_
+#define ANTILOPE_H_
+
+#include "Zootier.h"
+
+class Antilope : public Zootier {
+public:
+	Antilope();
+	Antilope(double _gewicht);
+	virtual ~Antilope();
+
+	std::string getTierart();
+};
+
+#endif /* ANTILOPE_H_ */
