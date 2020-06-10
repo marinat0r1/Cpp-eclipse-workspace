@@ -1,0 +1,8 @@
+18:10:28 **** Rebuild of configuration Debug for project algdat_insertsort ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_insertsort.o" "..\\src\\algdat_insertsort.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array_functions.o" "..\\src\\array_functions.cpp" 
+g++ -o algdat_insertsort.exe "src\\algdat_insertsort.o" "src\\array_functions.o" 
+
+18:10:29 Build Finished. 0 errors, 0 warnings. (took 1s.98ms)
+

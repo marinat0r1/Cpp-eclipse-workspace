@@ -1,0 +1,29 @@
+/*
+ * Node.h
+ *
+ *  Created on: Jun 4, 2020
+ *      Author: Marin
+ */
+
+#ifndef NODE_H_
+#define NODE_H_
+
+#include <iostream>
+
+using namespace std;
+
+class Node {
+public:
+	Node();
+	virtual ~Node();
+
+	int data;
+	Node *next;
+
+	//Methods
+	void print_linkedlist(Node* n) const;
+	int list_search(Node *n, int item) const;
+
+};
+
+#endif /* NODE_H_ */

@@ -1,0 +1,18 @@
+/*
+ * Loewe.cpp
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#include "Loewe.h"
+
+Loewe::Loewe(Zootier::GEFAEHRLICHKEIT::SEHR_GEFAEHRLICH) {
+	// TODO Auto-generated constructor stub
+
+}
+
+Loewe::~Loewe() {
+	// TODO Auto-generated destructor stub
+}
+

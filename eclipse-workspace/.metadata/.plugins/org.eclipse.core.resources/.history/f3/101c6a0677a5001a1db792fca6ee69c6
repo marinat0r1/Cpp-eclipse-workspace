@@ -1,0 +1,17 @@
+/*
+ * Zootier.h
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#ifndef ZOOTIER_H_
+#define ZOOTIER_H_
+
+class Zootier {
+public:
+	Zootier();
+	virtual ~Zootier();
+};
+
+#endif /* ZOOTIER_H_ */

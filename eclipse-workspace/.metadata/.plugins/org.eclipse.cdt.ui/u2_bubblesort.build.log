@@ -1,0 +1,20 @@
+18:10:38 **** Rebuild of configuration Debug for project u2_bubblesort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\bubblesort.o" "..\\src\\bubblesort.cpp" 
+..\src\bubblesort.cpp: In function 'void initialize_array(int*, int)':
+..\src\bubblesort.cpp:16:12: warning: value computed is not used [-Wunused-value]
+  array[size];
+            ^
+..\src\bubblesort.cpp:16:12: warning: statement has no effect [-Wunused-value]
+..\src\bubblesort.cpp: In function 'void bubblesort(int*, int)':
+..\src\bubblesort.cpp:21:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int puffer{0};
+      ^
+..\src\bubblesort.cpp: In function 'int main()':
+..\src\bubblesort.cpp:77:8: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int n[]{0};
+        ^
+g++ -o u2_bubblesort.exe "src\\bubblesort.o" 
+
+18:10:39 Build Finished. 0 errors, 4 warnings. (took 493ms)
+

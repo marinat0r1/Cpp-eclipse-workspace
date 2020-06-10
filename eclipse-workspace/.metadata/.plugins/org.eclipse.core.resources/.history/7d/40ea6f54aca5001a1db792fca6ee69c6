@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : u4.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <memory>
+#include <Loewe.h>
+#include <Antilope.h>
+
+
+using namespace std;
+
+int main() {
+
+	std::unique_ptr<Loewe> muki(new Loewe(300.0));
+
+
+	return 0;
+}

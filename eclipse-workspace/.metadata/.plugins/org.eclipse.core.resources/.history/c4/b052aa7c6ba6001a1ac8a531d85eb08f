@@ -1,0 +1,78 @@
+//============================================================================
+// Name        : linked_list_oop.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <memory>
+#include "Node.h"
+
+using namespace std;
+
+int main() {
+
+	//fix: why doesnt it work with smart pointer??
+	//unique_ptr<Node> head(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	//unique_ptr<Node> first(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	//unique_ptr<Node> second(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+	//unique_ptr<Node> third(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+
+	//testing prototype
+	 Node *head = nullptr;
+	 Node *first = nullptr;
+	 Node *second = nullptr;
+	 Node *third = nullptr;
+
+	 head = new Node;
+	 first = new Node;
+	 second = new Node;
+	 third = new Node;
+
+	 Node *test_search = nullptr;
+	 test_search = new Node;
+
+	 head->data = 1;
+	 head->next = first;
+
+	 first->data = 2;
+	 first->next = second;
+
+	 second->data = 3;
+	 second->next = third;
+
+	 third->data = 4;
+	 third->next = nullptr;
+
+	 head->print_linkedlist(head);
+
+	 int position = head->list_search(head, 4);
+
+	 cout<<"Pos: "<<position<<endl;
+
+	 Node *test_insertion = nullptr;
+	 test_insertion = new Node;
+	 test_insertion->data = 27;
+
+	 head->list_insert(head, test_insertion);
+
+	 head->print_linkedlist(head);
+
+
+	 head->delete_list_element(head, 3);
+
+	 head->print_linkedlist(head);
+
+
+
+	 delete head;
+	 delete first;
+	 delete second;
+	 delete third;
+	 delete test_search;
+	 delete test_insertion;
+
+	 return 0;
+}

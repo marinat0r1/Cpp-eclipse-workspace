@@ -1,0 +1,52 @@
+//============================================================================
+// Name        : linked_list_oop.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <memory>
+#include "Node.h"
+
+using namespace std;
+
+int main() {
+
+	//test
+	unique_ptr<Node> head(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	unique_ptr<Node> first(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	unique_ptr<Node> second(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+	unique_ptr<Node> third(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+
+	//testing
+	/*
+	 Node *head = nullptr;
+	 Node *first = nullptr;
+	 Node *second = nullptr;
+	 Node *third = nullptr;
+
+	 head = new Node;
+	 first = new Node;
+	 second = new Node;
+	 third = new Node;
+	*/
+
+	head->data = 1;
+	head->next = first;
+
+	first->data = 2;
+	first->next = second;
+
+	second->data = 3;
+	second->next = third;
+
+	third->data = 4;
+	third->next = nullptr;
+
+	head->print_linkedlist(head);
+
+
+	return 0;
+}

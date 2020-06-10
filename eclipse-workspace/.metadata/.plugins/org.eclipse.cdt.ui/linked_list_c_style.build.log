@@ -1,0 +1,7 @@
+18:10:34 **** Rebuild of configuration Debug for project linked_list_c_style ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linked_list_c_style.o" "..\\src\\linked_list_c_style.cpp" 
+g++ -o linked_list_c_style.exe "src\\linked_list_c_style.o" 
+
+18:10:34 Build Finished. 0 errors, 0 warnings. (took 452ms)
+

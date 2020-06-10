@@ -1,0 +1,17 @@
+18:10:31 **** Rebuild of configuration Debug for project algdat_u4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_u4.o" "..\\src\\algdat_u4.cpp" 
+..\src\algdat_u4.cpp: In function 'int main()':
+..\src\algdat_u4.cpp:14:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int x{0},y{0},z{0}, arr[10]={5,1,1,6,89,1,4,1,2,1};
+      ^
+..\src\algdat_u4.cpp:14:11: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int x{0},y{0},z{0}, arr[10]={5,1,1,6,89,1,4,1,2,1};
+           ^
+..\src\algdat_u4.cpp:14:16: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int x{0},y{0},z{0}, arr[10]={5,1,1,6,89,1,4,1,2,1};
+                ^
+g++ -o algdat_u4.exe "src\\algdat_u4.o" 
+
+18:10:31 Build Finished. 0 errors, 3 warnings. (took 461ms)
+

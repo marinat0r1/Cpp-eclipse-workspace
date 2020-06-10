@@ -1,0 +1,19 @@
+/*
+ * Zootier.cpp
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#include "Zootier.h"
+
+Zootier::Zootier() {
+	gewicht = 0.0;
+	gefahr = UNGEFAEHRLICH;
+}
+
+
+Zootier::~Zootier() {
+	// TODO Auto-generated destructor stub
+}
+

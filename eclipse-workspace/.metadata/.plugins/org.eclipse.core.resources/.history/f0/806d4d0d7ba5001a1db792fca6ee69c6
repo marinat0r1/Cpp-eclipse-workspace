@@ -1,0 +1,34 @@
+/*
+ * Zootier.h
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#ifndef ZOOTIER_H_
+#define ZOOTIER_H_
+
+class Zootier {
+public:
+
+	enum GEFAEHRLICHKEIT{SEHR_GEFAEHRLICH, GEFAEHRLICH, UNGEFAEHRLICH};
+
+	Zootier();
+	Zootier(double gewicht, GEFAEHRLICHKEIT gefahr);
+	virtual ~Zootier();
+
+	//Getter
+	double getGewicht();
+	GEFAEHRLICHKEIT getGefaehrlichkeit();
+
+	//Setter
+	void setGewicht(double _gewicht);
+	void setGefaehrlichkeit(GEFAEHRLICHKEIT _gefahr);
+
+private:
+	double gewicht;
+	GEFAEHRLICHKEIT gefahr;
+};
+
+
+#endif /* ZOOTIER_H_ */

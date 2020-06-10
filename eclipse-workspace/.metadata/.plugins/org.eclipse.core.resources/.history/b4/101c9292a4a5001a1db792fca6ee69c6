@@ -1,0 +1,20 @@
+/*
+ * Loewe.h
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#ifndef LOEWE_H_
+#define LOEWE_H_
+
+#include "Zootier.h"
+
+class Loewe : public Zootier {
+public:
+	Loewe();
+	Loewe(double _gewicht, Zootier::GEFAEHRLICHKEIT _gefahr);
+	virtual ~Loewe();
+};
+
+#endif /* LOEWE_H_ */

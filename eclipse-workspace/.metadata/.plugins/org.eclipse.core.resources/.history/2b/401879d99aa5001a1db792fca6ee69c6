@@ -1,0 +1,18 @@
+/*
+ * Antilope.cpp
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#include "Antilope.h"
+
+Antilope::Antilope() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Antilope::~Antilope() {
+	// TODO Auto-generated destructor stub
+}
+

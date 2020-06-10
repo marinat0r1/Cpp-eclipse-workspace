@@ -1,0 +1,19 @@
+/*
+ * Antilope.h
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#ifndef ANTILOPE_H_
+#define ANTILOPE_H_
+
+
+class Antilope: public Zootier {
+public:
+	Antilope();
+	Antilope(GEFAEHRLICHKEIT _gefahr);
+	virtual ~Antilope();
+};
+
+#endif /* ANTILOPE_H_ */

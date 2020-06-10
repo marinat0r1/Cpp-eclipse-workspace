@@ -1,0 +1,21 @@
+/*
+ * Loewe.cpp
+ *
+ *  Created on: Jun 3, 2020
+ *      Author: Marin
+ */
+
+#include "Loewe.h"
+
+Loewe::Loewe() {
+	// TODO Auto-generated constructor stub
+
+}
+Loewe::Loewe(double _gewicht, GEFAEHRLICHKEIT _gefahr) {
+	// TODO Auto-generated constructor stub
+
+}
+Loewe::~Loewe() {
+	// TODO Auto-generated destructor stub
+}
+

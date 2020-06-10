@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
+	<item key="LastUsedHeaderTemplate" value="Default C++ header template"/>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="CResourceRenameRefactoringInputPage">
+		<item key="updateReferences" value="true"/>
+	</section>
+	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="gnu"/>
+		</list>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="askReindex.detail" value="0"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item key="namespaceSelected" value="false"/>
+		<item key="testFileSelected" value="false"/>
+		<item key="stubImpl0" value="DEFINITION"/>
+		<item key="stubSelected0" value="true"/>
+		<item key="stubVirtual1" value="true"/>
+		<item key="stubImpl1" value="DEFINITION"/>
+		<item key="stubSelected1" value="true"/>
+		<item key="stubImpl2" value="DEFINITION"/>
+		<item key="stubSelected2" value="false"/>
+		<item key="stubImpl3" value="DEFINITION"/>
+		<item key="stubSelected3" value="false"/>
+		<item key="stubImpl4" value="DEFINITION"/>
+		<item key="stubSelected4" value="false"/>
+		<item key="stubImpl5" value="DEFINITION"/>
+		<item key="stubSelected5" value="false"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="CRenameRefactoringInputPage">
+	</section>
+</section>

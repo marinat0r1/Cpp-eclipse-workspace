@@ -1,0 +1,33 @@
+/*
+ * Node.h
+ *
+ *  Created on: Jun 4, 2020
+ *      Author: Marin
+ */
+
+#ifndef NODE_H_
+#define NODE_H_
+
+#include <iostream>
+
+using namespace std;
+
+class Node {
+public:
+	Node();
+	virtual ~Node();
+
+	int data;
+	Node *next;
+
+	//Methods
+	void print_linkedlist(Node* list) const;
+	int list_search(Node *list, int item);
+	Node* list_search_element(Node *list, int searched_num);
+	void list_insert(Node *list_head, Node *insertion_element);
+	void delete_list_element(Node *list, int deletion_num);
+	void list_insert_initialize(Node *list_head, int value);
+
+};
+
+#endif /* NODE_H_ */

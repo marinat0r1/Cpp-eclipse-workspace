@@ -1,0 +1,62 @@
+//============================================================================
+// Name        : algdat_qs_hoare.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "array_functions.h"
+
+using namespace std;
+
+int hoare_partition(int arr[], int p , int r)
+{
+
+	int pivot = arr[p];
+	int i = p-1;
+	int j = r+1;
+
+	while(true){
+
+		do{
+			j--;
+		}while(arr[j] > pivot);
+
+		do{
+			i++;
+		}while(arr[i] < pivot);
+
+		if(i < j){
+			swap(arr[i], arr[j]);
+		}
+
+		else{
+			return j;
+		}
+
+	}
+}
+
+void quicksort(int arr[],int p, int r)
+{
+	if(p<r)
+	{
+		 int q = hoare_partition(arr,p,r);
+		 quicksort(arr,p,q);
+		 quicksort(arr,q+1,r);
+	}
+}
+
+
+int main() {
+
+	int arr[] = {2,4,7,6,3,8,3,1,9};
+
+	quicksort(arr,0,8);
+
+	print_array(arr, 9);
+
+	return 0;
+}

@@ -1,0 +1,7 @@
+18:10:30 **** Rebuild of configuration Debug for project algdat_test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_test.o" "..\\src\\algdat_test.cpp" 
+g++ -o algdat_test.exe "src\\algdat_test.o" 
+
+18:10:31 Build Finished. 0 errors, 0 warnings. (took 495ms)
+

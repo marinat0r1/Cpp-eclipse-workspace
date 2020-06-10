@@ -1,0 +1,14 @@
+18:10:31 **** Rebuild of configuration Debug for project array_functions ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array_functions.o" "..\\src\\array_functions.cpp" 
+..\src\array_functions.cpp: In function 'void initialize_array(int*, int)':
+..\src\array_functions.cpp:29:8: warning: value computed is not used [-Wunused-value]
+  a[size];
+        ^
+..\src\array_functions.cpp:29:8: warning: statement has no effect [-Wunused-value]
+g++ -o array_functions.exe "src\\array_functions.o" 
+c:/mingw/bin/../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text.startup+0x25): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+
+18:10:32 Build Finished. 0 errors, 2 warnings. (took 554ms)
+

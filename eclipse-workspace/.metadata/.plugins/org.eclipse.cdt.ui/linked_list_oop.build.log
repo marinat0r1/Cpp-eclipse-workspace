@@ -1,0 +1,8 @@
+13:44:02 **** Incremental Build of configuration Debug for project linked_list_oop ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\linked_list_oop.o" "..\\src\\linked_list_oop.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Node.o" "..\\src\\Node.cpp" 
+g++ -o linked_list_oop.exe "src\\Node.o" "src\\linked_list_oop.o" 
+
+13:44:11 Build Finished. 0 errors, 0 warnings. (took 9s.37ms)
+

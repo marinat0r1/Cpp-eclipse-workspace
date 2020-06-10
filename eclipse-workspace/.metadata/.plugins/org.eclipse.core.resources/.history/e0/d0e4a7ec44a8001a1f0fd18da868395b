@@ -1,0 +1,18 @@
+/*
+ * Double.cpp
+ *
+ *  Created on: Jun 7, 2020
+ *      Author: Marin
+ */
+
+#include "Double.h"
+
+Double::Double() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Double::~Double() {
+	// TODO Auto-generated destructor stub
+}
+

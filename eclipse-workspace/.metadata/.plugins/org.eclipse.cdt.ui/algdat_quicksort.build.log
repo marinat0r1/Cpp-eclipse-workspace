@@ -1,0 +1,7 @@
+18:10:30 **** Incremental Build of configuration Debug for project algdat_quicksort ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_quicksort.o" "..\\src\\algdat_quicksort.cpp" 
+g++ -o algdat_quicksort.exe "src\\algdat_quicksort.o" "src\\array_functions.o" 
+
+18:10:30 Build Finished. 0 errors, 0 warnings. (took 599ms)
+

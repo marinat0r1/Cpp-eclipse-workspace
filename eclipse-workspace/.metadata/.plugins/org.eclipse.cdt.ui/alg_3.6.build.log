@@ -1,0 +1,33 @@
+18:10:28 **** Rebuild of configuration Debug for project alg_3.6 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alg_3.6.o" "..\\src\\alg_3.6.cpp" 
+..\src\alg_3.6.cpp: In function 'void schleife2(int)':
+..\src\alg_3.6.cpp:16:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int k{0},i{0},j{0};
+      ^
+..\src\alg_3.6.cpp:16:11: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int k{0},i{0},j{0};
+           ^
+..\src\alg_3.6.cpp:16:16: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int k{0},i{0},j{0};
+                ^
+..\src\alg_3.6.cpp:17:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int a{0},b{0},c{2};
+      ^
+..\src\alg_3.6.cpp:17:11: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int a{0},b{0},c{2};
+           ^
+..\src\alg_3.6.cpp:17:16: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int a{0},b{0},c{2};
+                ^
+..\src\alg_3.6.cpp:18:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int n{durchlauf};
+      ^
+..\src\alg_3.6.cpp: In function 'int main()':
+..\src\alg_3.6.cpp:44:6: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int limit{10000};
+      ^
+g++ -o alg_3.6.exe "src\\alg_3.6.o" 
+
+18:10:28 Build Finished. 0 errors, 8 warnings. (took 547ms)
+

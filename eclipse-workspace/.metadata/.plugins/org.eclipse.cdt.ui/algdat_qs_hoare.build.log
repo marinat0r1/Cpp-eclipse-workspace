@@ -1,0 +1,7 @@
+12:58:41 **** Incremental Build of configuration Debug for project algdat_qs_hoare ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_qs_hoare.o" "..\\src\\algdat_qs_hoare.cpp" 
+g++ -o algdat_qs_hoare.exe "src\\algdat_qs_hoare.o" "src\\array_functions.o" 
+
+12:58:41 Build Finished. 0 errors, 0 warnings. (took 479ms)
+

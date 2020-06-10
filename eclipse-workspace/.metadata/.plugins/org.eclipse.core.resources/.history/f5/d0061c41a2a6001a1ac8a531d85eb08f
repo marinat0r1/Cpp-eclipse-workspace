@@ -1,0 +1,95 @@
+/*
+ * Node.cpp
+ *
+ *  Created on: Jun 4, 2020
+ *      Author: Marin
+ */
+
+#include "Node.h"
+
+Node::Node() {
+	//cout<<"Konstruktor wurde aufgerufen"<<endl;
+	data = 0;
+	next = nullptr;
+
+}
+
+Node::~Node() {
+	cout<<"Destruktor wurde aufgerufen"<<endl;
+	delete next;
+	next = nullptr;
+}
+
+void Node::print_linkedlist(Node* list)const{
+	list = list->next;
+	while(list != nullptr){
+		cout<<" "<<list->data<<" ";
+		list = list->next;
+	}
+	cout<<"\n"<<endl;
+};
+
+int Node::list_search(Node *list, int item){
+	Node* x = list;
+	int j;
+	while(x != nullptr && item != x->data){
+		x = x->next;
+		j++;
+	}
+	if(x == nullptr){
+		return -1;
+	}
+	return j;
+};
+
+void Node::list_insert_first(Node *list_head, Node *insertion_element){
+	 Node* temp = list_head->next;
+	 list_head->next = insertion_element;
+	 insertion_element->next = temp;
+};
+
+Node* Node::list_search_element(Node *list, int searched_num){
+	Node* x = list;
+	while(x != nullptr && searched_num != x->data){
+			x = x->next;
+		}
+	return x;
+};
+
+/*
+//finish method: searching node and deleting node separately
+void Node::delete_list_element(Node *list, int deletion_num){
+	Node* temp = list->list_search_element(list, deletion_num);
+	list->next = temp->next;
+	temp->next = nullptr;
+	delete temp;
+	temp = nullptr;
+};
+*/
+
+void Node::delete_list_element(Node *list, int deletion_num){
+	while(list != nullptr && deletion_num != list->next->data){
+		list = list->next;
+	}
+	Node* temp = list->next->next;
+	list->next->next = nullptr;
+	list->next = temp;
+};
+
+void Node::list_insert_initialize(Node *list_head, int value){
+
+	Node* new_node = nullptr;
+	new_node = new Node;
+	new_node->data = value;
+	new_node->next = list_head->next;
+	list_head->next = new_node;
+};
+
+
+
+void Node::list_insert_initialize_n(Node *list_head, int number_of_elements, int arr[]){
+	for(int i = 0; i<number_of_elements; i++){
+		list_head->list_insert_initialize(list_head, arr[i]);
+	}
+};
+

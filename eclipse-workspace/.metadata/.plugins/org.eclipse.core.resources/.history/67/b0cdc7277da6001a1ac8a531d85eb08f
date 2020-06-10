@@ -1,0 +1,100 @@
+//============================================================================
+// Name        : linked_list_oop.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <memory>
+#include "Node.h"
+
+using namespace std;
+
+int main() {
+
+	//fix: why doesnt it work with smart pointer??
+	//unique_ptr<Node> head(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	//unique_ptr<Node> first(new Node()); // @suppress("Symbol is not resolved") // @suppress("Type cannot be resolved")
+	//unique_ptr<Node> second(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+	//unique_ptr<Node> third(new Node()); // @suppress("Type cannot be resolved") // @suppress("Symbol is not resolved")
+
+	//testing prototype
+	 Node *head = nullptr;
+	 Node *first = nullptr;
+	 Node *second = nullptr;
+	 Node *third = nullptr;
+
+	 head = new Node;
+	 first = new Node;
+	 second = new Node;
+	 third = new Node;
+
+	 Node *test_search = nullptr;
+	 test_search = new Node;
+
+	 head->data = 1;
+	 head->next = first;
+
+	 first->data = 2;
+	 first->next = second;
+
+	 second->data = 3;
+	 second->next = third;
+
+	 third->data = 4;
+	 third->next = nullptr;
+
+	 head->print_linkedlist(head);
+
+	 int position = head->list_search(head, 4);
+
+	 cout<<"Pos: "<<position<<"\n"<<endl;
+
+	 Node *test_insertion = nullptr;
+	 test_insertion = new Node;
+	 test_insertion->data = 27;
+
+	 head->list_insert(head, test_insertion);
+
+	 head->print_linkedlist(head);
+
+
+	 head->delete_list_element(head, 27);
+
+	 head->print_linkedlist(head);
+
+	 cout<<"\n\n"<<endl;
+	 //linked-list with insertion
+	 Node *head1 = nullptr;
+	 head1 = new Node;
+
+	 head1->list_insert_initialize(head1, 1);
+	 head1->list_insert_initialize(head1, 2);
+	 head1->list_insert_initialize(head1, 3);
+	 head1->list_insert_initialize(head1, 4);
+
+	 head1->print_linkedlist(head1);
+
+	 head1->delete_list_element(head1, 3);
+
+	 head1->print_linkedlist(head1);
+
+
+
+	 cout<<"\n\n"<<endl;
+	 //linked-list with multiple insertion
+	 Node *head2 = nullptr;
+	 head1 = new Node;
+
+	 int arr1[12] ={11,10,9,8,7,6,5,4,3,2,1,0};
+
+	 head2->list_insert_initialize_n(head2, 12, arr1);
+
+	 head2->print_linkedlist(head2);
+
+	 delete head2;
+
+	 return 0;
+}

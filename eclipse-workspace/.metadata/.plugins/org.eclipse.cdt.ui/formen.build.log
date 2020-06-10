@@ -1,0 +1,18 @@
+18:10:32 **** Incremental Build of configuration Debug for project formen ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Dreieck.o" "..\\src\\Dreieck.cpp" 
+..\src\Dreieck.cpp:38:7: error: redefinition of 'void Dreieck::set_seite_a(double)'
+  void Dreieck::set_seite_a(double _seite_b){
+       ^
+..\src\Dreieck.cpp:34:7: error: 'void Dreieck::set_seite_a(double)' previously defined here
+  void Dreieck::set_seite_a(double _seite_a){
+       ^
+..\src\Dreieck.cpp:42:7: error: redefinition of 'void Dreieck::set_seite_a(double)'
+  void Dreieck::set_seite_a(double _seite_c){
+       ^
+..\src\Dreieck.cpp:34:7: error: 'void Dreieck::set_seite_a(double)' previously defined here
+  void Dreieck::set_seite_a(double _seite_a){
+       ^
+
+18:10:32 Build Failed. 4 errors, 0 warnings. (took 173ms)
+
