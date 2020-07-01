@@ -1,0 +1,8 @@
+13:38:44 **** Incremental Build of configuration Debug for project algdat_stack ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_stack.o" "..\\src\\algdat_stack.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayStack.o" "..\\src\\ArrayStack.cpp" 
+g++ -o algdat_stack.exe "src\\ArrayStack.o" "src\\algdat_stack.o" "src\\array_functions.o" 
+
+13:38:46 Build Finished. 0 errors, 0 warnings. (took 1s.900ms)
+

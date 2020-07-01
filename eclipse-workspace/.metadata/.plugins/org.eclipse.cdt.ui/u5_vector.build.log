@@ -1,0 +1,7 @@
+11:13:41 **** Incremental Build of configuration Debug for project u5_vector ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\u5_vector.o" "..\\src\\u5_vector.cpp" 
+g++ -o u5_vector.exe "src\\Vector.o" "src\\array_functions.o" "src\\u5_vector.o" 
+
+11:13:42 Build Finished. 0 errors, 0 warnings. (took 619ms)
+

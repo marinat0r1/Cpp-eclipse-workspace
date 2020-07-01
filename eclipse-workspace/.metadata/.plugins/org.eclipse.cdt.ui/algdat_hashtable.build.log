@@ -1,0 +1,7 @@
+16:48:41 **** Incremental Build of configuration Debug for project algdat_hashtable ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_hashtable.o" "..\\src\\algdat_hashtable.cpp" 
+g++ -o algdat_hashtable.exe "src\\Node.o" "src\\Table.o" "src\\algdat_hashtable.o" 
+
+16:48:43 Build Finished. 0 errors, 0 warnings. (took 1s.442ms)
+

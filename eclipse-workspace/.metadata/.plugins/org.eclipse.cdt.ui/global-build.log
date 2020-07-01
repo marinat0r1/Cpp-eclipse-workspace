@@ -1,14 +1,146 @@
-12:57:52 **** Rebuild of configuration Debug for project algdat_qs_hoare ****
+20:39:41 **** Rebuild of configuration Debug for project serialization_test ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_qs_hoare.o" "..\\src\\algdat_qs_hoare.cpp" 
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array_functions.o" "..\\src\\array_functions.cpp" 
-g++ -o algdat_qs_hoare.exe "src\\algdat_qs_hoare.o" "src\\array_functions.o" 
-Info: Nothing to build for algdat_qs_hoare
-12:58:34 **** Incremental Build of configuration Debug for project algdat_qs_hoare ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+g++ -o serialization_test.exe "src\\serialization_test.o" 
+Info: Nothing to build for serialization_test
+Info: Nothing to build for serialization_test
+20:42:23 **** Incremental Build of configuration Debug for project serialization_test ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_qs_hoare.o" "..\\src\\algdat_qs_hoare.cpp" 
-g++ -o algdat_qs_hoare.exe "src\\algdat_qs_hoare.o" "src\\array_functions.o" 
-12:58:41 **** Incremental Build of configuration Debug for project algdat_qs_hoare ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+g++ -o serialization_test.exe "src\\serialization_test.o" 
+Info: Nothing to build for serialization_test
+20:46:04 **** Incremental Build of configuration Debug for project serialization_test ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_qs_hoare.o" "..\\src\\algdat_qs_hoare.cpp" 
-g++ -o algdat_qs_hoare.exe "src\\algdat_qs_hoare.o" "src\\array_functions.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+..\src\serialization_test.cpp: In function 'int main()':
+..\src\serialization_test.cpp:18:39: error: no match for 'operator>>' (operand types are 'std::basic_ostream<char>' and 'const char [11]')
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                       ^
+..\src\serialization_test.cpp:18:39: note: candidates are:
+In file included from c:\mingw\include\c++\4.8.3\string:53:0,
+                 from c:\mingw\include\c++\4.8.3\bits\locale_classes.h:40,
+                 from c:\mingw\include\c++\4.8.3\bits\ios_base.h:41,
+                 from c:\mingw\include\c++\4.8.3\ios:42,
+                 from c:\mingw\include\c++\4.8.3\ostream:38,
+                 from c:\mingw\include\c++\4.8.3\iostream:39,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\bits\basic_string.tcc:996:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+c:\mingw\include\c++\4.8.3\bits\basic_string.tcc:996:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\istream:879:0,
+                 from c:\mingw\include\c++\4.8.3\iostream:40,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\bits\istream.tcc:955:5: note: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+c:\mingw\include\c++\4.8.3\bits\istream.tcc:955:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\istream:879:0,
+                 from c:\mingw\include\c++\4.8.3\iostream:40,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\bits\istream.tcc:923:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+c:\mingw\include\c++\4.8.3\bits\istream.tcc:923:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\iostream:40:0,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\istream:727:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+c:\mingw\include\c++\4.8.3\istream:727:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\iostream:40:0,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\istream:732:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+c:\mingw\include\c++\4.8.3\istream:732:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\iostream:40:0,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\istream:774:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+c:\mingw\include\c++\4.8.3\istream:774:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from c:\mingw\include\c++\4.8.3\iostream:40:0,
+                 from ..\src\serialization_test.cpp:9:
+c:\mingw\include\c++\4.8.3\istream:779:5: note: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+c:\mingw\include\c++\4.8.3\istream:779:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<char, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:68:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:68:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:98:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setiosflags)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:98:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:129:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setbase)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:129:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:167:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:167:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:197:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setprecision)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:197:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+In file included from ..\src\serialization_test.cpp:11:0:
+c:\mingw\include\c++\4.8.3\iomanip:227:5: note: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::_Setw)
+     operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+     ^
+c:\mingw\include\c++\4.8.3\iomanip:227:5: note:   template argument deduction/substitution failed:
+..\src\serialization_test.cpp:18:42: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+  outputFile <<setw(10)<< "Wasssssuup" >> "Wasssssuup";
+                                          ^
+20:46:18 **** Incremental Build of configuration Debug for project serialization_test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+g++ -o serialization_test.exe "src\\serialization_test.o" 
+Info: Nothing to build for serialization_test
+20:46:50 **** Incremental Build of configuration Debug for project serialization_test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+g++ -o serialization_test.exe "src\\serialization_test.o" 

@@ -1,0 +1,14 @@
+18:48:01 **** Incremental Build of configuration Debug for project u4_operatorbaum ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OperatorAddition.o" "..\\src\\OperatorAddition.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operator.o" "..\\src\\Operator.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Number.o" "..\\src\\Number.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OperatorDivision.o" "..\\src\\OperatorDivision.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OperatorSubtraction.o" "..\\src\\OperatorSubtraction.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Node.o" "..\\src\\Node.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OperatorMultiplication.o" "..\\src\\OperatorMultiplication.cpp" 
+g++ -o u4_operatorbaum.exe "src\\Node.o" "src\\Number.o" "src\\Operator.o" "src\\OperatorAddition.o" "src\\OperatorDivision.o" "src\\OperatorMultiplication.o" "src\\OperatorSubtraction.o" "src\\main.o" 
+
+18:48:03 Build Finished. 0 errors, 0 warnings. (took 2s.137ms)
+

@@ -1,0 +1,7 @@
+20:46:50 **** Incremental Build of configuration Debug for project serialization_test ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\serialization_test.o" "..\\src\\serialization_test.cpp" 
+g++ -o serialization_test.exe "src\\serialization_test.o" 
+
+20:46:50 Build Finished. 0 errors, 0 warnings. (took 461ms)
+

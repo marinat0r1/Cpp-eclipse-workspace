@@ -1,1 +1,14 @@
-Info: Nothing to build for algdat_mergesort
+16:27:04 **** Rebuild of configuration Debug for project algdat_mergesort ****
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\array_functions.o" "..\\src\\array_functions.cpp" 
+..\src\array_functions.cpp: In function 'void initialize_array(int*, int)':
+..\src\array_functions.cpp:18:8: warning: value computed is not used [-Wunused-value]
+  a[size];
+        ^
+..\src\array_functions.cpp:18:8: warning: statement has no effect [-Wunused-value]
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mergesort_gfg.o" "..\\src\\mergesort_gfg.cpp" 
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\algdat_mergesort.o" "..\\src\\algdat_mergesort.cpp" 
+g++ -o algdat_mergesort.exe "src\\algdat_mergesort.o" "src\\array_functions.o" "src\\mergesort_gfg.o" 
+
+16:27:05 Build Finished. 0 errors, 2 warnings. (took 1s.787ms)
+

@@ -1,0 +1,39 @@
+/*
+ * List.cpp
+ *
+ *  Created on: Jun 15, 2020
+ *      Author: Marin
+ */
+
+#include "List.h"
+
+List::List() {
+	next = nullptr;
+	value = 0;
+
+}
+
+List::~List() {
+	delete next;
+	next = nullptr;
+}
+
+	int List::list_head(List* list)
+	{
+
+	};
+
+	List* List::list_tail(List* list)
+	{
+
+	};
+
+	List* List::list_add_front(List* list, int)
+	{
+
+	};
+
+	void List::list_delete(List* list)
+	{
+
+	};
